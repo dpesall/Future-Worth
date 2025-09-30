@@ -8,23 +8,23 @@ FutureWorth is a set of focused, high‑performance financial calculators that m
 
 - Home
 
-  ![Home](client/public/home-page.png)
+  ![Home](future-worth/client/public/home-page.png)
 
 - Compound Interest
 
-  ![Compound Interest Calculator](client/public/compound-interest-calc.jpeg)
+  ![Compound Interest Calculator](future-worth/client/public/compound-interest-calc.jpeg)
 
 - Mortgage
 
-  ![Mortgage Calculator](client/public/mortgage-calc.jpeg)
+  ![Mortgage Calculator](future-worth/client/public/mortgage-calc.jpeg)
 
 - Retirement Savings
 
-  ![Retirement Savings Calculator](client/public/retirement-savings-calc.jpeg)
+  ![Retirement Savings Calculator](future-worth/client/public/retirement-savings-calc.jpeg)
 
 - Loan Payoff
 
-  ![Loan Payoff Calculator](client/public/loan-payoff-calc.jpeg)
+  ![Loan Payoff Calculator](future-worth/client/public/loan-payoff-calc.jpeg)
 
 ## Calculators
 
@@ -76,14 +76,15 @@ npm run build
 ## Project Structure
 
 ```
-future-worth/
-├─ client/                # React app
-│  ├─ public/             # Static assets (screenshots, logos, index.html)
-│  └─ src/                # Components, styles, utils
-├─ server/                # API server (Node)
-├─ .gitignore
-├─ package.json           # Monorepo scripts
-└─ README.md
+FutureWorth/
+└─ future-worth/
+   ├─ client/                # React app
+   │  ├─ public/             # Static assets (screenshots, logos, index.html)
+   │  └─ src/                # Components, styles, utils
+   ├─ server/                # API server (Node)
+   ├─ .gitignore             # (optional) subfolder ignores
+   ├─ package.json           # Monorepo scripts
+   └─ README.md              # App README (optional; primary README at repo root)
 ```
 
 ## Contributing / Credits
@@ -94,4 +95,3 @@ future-worth/
 ## License
 
 Copyright © 2025. All rights reserved.
-

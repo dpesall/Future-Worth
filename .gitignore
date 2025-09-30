@@ -1,0 +1,53 @@
+# Root ignore for Future-Worth monorepo
+
+# Node dependencies
+future-worth/node_modules/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.log
+*.log.*
+
+# Editor / OS files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+.claude
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Build / coverage (generic)
+future-worth/build/
+future-worth/dist/
+future-worth/coverage/
+
+# Client specific
+future-worth/client/node_modules/
+future-worth/client/build/
+future-worth/client/.cache/
+future-worth/client/coverage/
+future-worth/client/.eslintcache
+future-worth/client/.env
+future-worth/client/.env.local
+future-worth/client/.env.*.local
+
+# Server specific
+future-worth/server/node_modules/
+future-worth/server/dist/
+future-worth/server/coverage/
+future-worth/server/logs/
+future-worth/server/*.log
+future-worth/server/.env
+future-worth/server/.env.local
+future-worth/server/.env.*.local
+
+# Repo-local helper files
+future-worth/comp.txt
+future-worth/compile-all.cmd
