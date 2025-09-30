@@ -1,0 +1,54 @@
+.credits { display: flex; flex-direction: column; gap: 1.25rem; }
+
+.credits__hero {
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  padding: 2rem 1.25rem;
+  background: radial-gradient(1200px 400px at 0% 0%, rgba(34, 197, 94, 0.25) 0%, rgba(0,0,0,0) 60%),
+              linear-gradient(135deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));
+  border: 1px solid rgba(34, 197, 94, 0.25);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.35), inset 0 1px 0 rgba(255,255,255,0.05);
+}
+.credits__hero-title { margin: 0 0 0.35rem; color: #FFFFFF; font-size: clamp(1.6rem, 3.4vw, 2rem); }
+.credits__hero-subtitle { margin: 0; color: #D6E4E5; max-width: 70ch; }
+
+.credits__section {
+  border-radius: 18px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));
+  border: 1px solid rgba(255,255,255,0.1);
+  box-shadow: 0 8px 22px rgba(0,0,0,0.35);
+  padding: 1rem;
+}
+.credits__section h2 { margin: 0 0 0.5rem; color: #EAF2F2; font-size: 1.25rem; }
+.credits__text { margin: 0.25rem 0; color: #C9D6D6; }
+
+/* Stack grid */
+.credits__stack-grid { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 0.8rem; }
+@media (max-width: 1100px) { .credits__stack-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+@media (max-width: 740px)  { .credits__stack-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 520px)  { .credits__stack-grid { grid-template-columns: 1fr; } }
+
+.credits__card {
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,0.08);
+  background: rgba(0,0,0,0.25);
+  padding: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+.credits__card-title { margin: 0; color: #FFFFFF; font-size: 1.02rem; }
+.credits__card-desc { margin: 0; color: #C9D6D6; font-size: 0.95rem; }
+
+.credits__icon {
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  border-radius: 12px;
+  background: linear-gradient(135deg, rgba(34,197,94,0.2), rgba(34,197,94,0.05));
+  border: 1px solid rgba(34,197,94,0.25);
+  color: #22C55E;
+  font-size: 22px; /* react-icons sizing */
+}

@@ -1,0 +1,37 @@
+// App.scss - Main application styles
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(135deg, #393E46 0%, #222831 100%);
+  color: #EEEEEE;
+}
+
+.app__main-content {
+  flex: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.app__footer {
+  background: rgba(0, 0, 0, 0.3);
+  border-top: 1px solid rgba(34, 197, 94, 0.3);
+  padding: 1.5rem 0;
+  text-align: center;
+
+  p {
+    margin: 0;
+    color: #CCCCCC;
+    font-size: 0.9rem;
+  }
+}
+
+// Responsive design
+@media (max-width: 768px) {
+  .app__main-content {
+    padding: 1rem;
+  }
+}
